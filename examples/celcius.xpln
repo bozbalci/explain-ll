@@ -1,0 +1,9 @@
+fun convert(fahr)
+    celcius := 5 * (fahr-32) / 9;
+    return celcius;
+endf;
+
+input fahr;
+result := convert(fahr);
+output result;
+return 0;
