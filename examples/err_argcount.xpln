@@ -1,0 +1,12 @@
+fun tooFew(a, b, c)
+    return a + b;
+endf;
+
+fun tooMany(a)
+    return a;
+endf;
+
+x := tooFew(1, 2);
+y := tooMany(4, 5);
+
+return 1;
