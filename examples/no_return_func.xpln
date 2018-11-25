@@ -1,0 +1,33 @@
+fun directReturn()
+    return 5;
+endf;
+
+fun nestedReturn()
+    output z;
+
+    if z == z
+        return 5;
+    endi;
+endf;
+
+fun veryNestedReturn()
+    output z;
+
+    if z == z
+        while 5 > 0
+            return 5;
+        endw;
+    endi;
+endf;
+
+fun noReturn()
+    output z;
+
+    if z == z
+        while 5 > 0
+            output z;
+        endw;
+    endi;
+endf;
+
+return 5;

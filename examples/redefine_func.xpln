@@ -1,0 +1,10 @@
+
+
+
+fun foo()
+    return 42;
+endf;
+
+fun foo()
+    return 43;
+endf;
