@@ -1,7 +1,6 @@
 /*
  * Grammar for Xpln
  *
- * TODO: Attempt to produce more accurate errors
  * TODO: Create good and bad XPLN programs
  *         1. Good tokens
  *         2. Bad tokens
@@ -11,8 +10,6 @@
  *       Include outputs of parsing these in a ZIP file, write into
  *       README some descriptions on how these examples can be tested
  *       independently
- * TODO: Use visitors or listeners to detect that the main body and
- *       every function has a `return` statement (at least one)
  */
 
 grammar Xpln;
@@ -27,11 +24,11 @@ entry
   ;
 
 stmt
-  : assn_stmt                                    # StmtAssn
-  | if_stmt                                      # StmtIf
-  | while_stmt                                   # StmtWhile
-  | return_stmt                                  # StmtReturn
-  | io_stmt                                      # StmtIo
+  : assn_stmt
+  | if_stmt
+  | while_stmt
+  | return_stmt
+  | io_stmt
   ;
 
 block_stmt
@@ -67,20 +64,20 @@ io_stmt
   ;
 
 expr
-  : expr (PLUS | MINUS) term                     # ExprAdd
-  | term                                         # ExprTerm
+  : expr (PLUS | MINUS) term
+  | term
   ;
 
 term
-  : term (TIMES | DIV) factor                    # ExprMul
-  | factor                                       # ExprFactor
+  : term (TIMES | DIV) factor
+  | factor
   ;
 
 factor
-  : OPEN_PAR expr CLOSE_PAR                      # ExprParen
-  | funccall                                     # ExprCall
-  | ID                                           # ExprIdent
-  | NUM                                          # ExprNum
+  : OPEN_PAR expr CLOSE_PAR
+  | funccall
+  | ID
+  | NUM
   ;            
 
 funccall
