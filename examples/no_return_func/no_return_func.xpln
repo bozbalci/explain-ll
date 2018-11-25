@@ -1,0 +1,17 @@
+fun direct()
+    return 42;
+endf;
+
+fun nested()
+    while 0 > 1
+        return 42;
+    endw;
+endf;
+
+fun none(a)
+    while 0 > 1
+        output a;
+    endw;
+endf;
+
+return 1;

@@ -1,0 +1,40 @@
+integer := 100;
+
+float := 45.10;
+floatPtBegin := .123;
+floatPtEnd := 500.;
+
+fun callMe()
+    return 42;
+endf;
+
+expr := integer + 30 - (444 * 10 / 2.) + callMe();
+
+fUn CAseInSEnsITivE(x, y, z)
+    rETUrn x + y + z;
+eNdf;
+
+foo := caseInsensitive(1, CALLME(), integer);
+
+while foo > 0
+    bar := 10;
+    baz := 11.1;
+    qux := 20.0;
+
+    input quux;
+
+    if baz > 3 or !quux <= 10
+        output baz;
+    else
+        quuz := 1; garply := 2; waldo := 3;
+
+        if quuz < 5 and corge >= 3 or garply == waldo
+            return bar;
+        endi;
+    endi;
+
+    foo := foo - 1;
+endw;
+
+grault := 10;
+return grault;

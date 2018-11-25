@@ -1,0 +1,6 @@
+fum foo(a, b)
+    return 1e3;
+endf
+
+x := foo(1, 2) $
+return x;

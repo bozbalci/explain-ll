@@ -1,0 +1,10 @@
+fun foo(a)
+    return 1;
+endf;
+
+fun foo(a, b)
+    return 0;
+endf;
+
+result := foo(1, 2);
+return result;

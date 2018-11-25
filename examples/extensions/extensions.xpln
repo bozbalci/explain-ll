@@ -1,0 +1,20 @@
+fun foo(a)
+    return a;
+endf;
+
+x := 3; y:= 5; z := 7;
+
+if (x == y) or (y == z) or (x == z)
+    result := foo(foo(foo(z)));
+endi;
+
+if x == 0 and y == 0 or z == 0
+    result := result + 1;
+endi;
+
+if x == 0 or x == 1 or x == 2
+    result := result + 2;
+endi;
+
+output result;
+return 0;

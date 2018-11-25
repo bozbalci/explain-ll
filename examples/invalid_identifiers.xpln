@@ -1,7 +1,0 @@
-fun if()
-    input a;
-endf;
-
-fun fun(fun)
-    return fun;
-endf;

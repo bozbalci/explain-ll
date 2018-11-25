@@ -1,0 +1,16 @@
+fun fun(fun)
+    return fun;
+endf;
+
+foo := 5;
+and := 3;
+
+if and == 3
+    output foo;
+endi;
+
+else and == 5
+    output foo;
+endi;
+
+return return;

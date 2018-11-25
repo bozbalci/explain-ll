@@ -1,0 +1,5 @@
+fun foo(a, b, c)
+    return a + b + c;
+endf;
+
+return foo(1, 2) + foo(1, 2, 3, 4);
