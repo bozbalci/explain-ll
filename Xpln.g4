@@ -1,15 +1,5 @@
 /*
  * Grammar for Xpln
- *
- * TODO: Create good and bad XPLN programs
- *         1. Good tokens
- *         2. Bad tokens
- *         3. Good tokens, ill-formed structure
- *         4. Programs non-conforming to `return` condition
- *         5. Programs conforming to `return` condition
- *       Include outputs of parsing these in a ZIP file, write into
- *       README some descriptions on how these examples can be tested
- *       independently
  */
 
 grammar Xpln;
