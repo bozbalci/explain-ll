@@ -2,7 +2,7 @@ all: compile
 
 compile:
 	antlr4 -no-listener -visitor Xpln.g4
-	javac Xpln*.java
+	javac Xpln*.java Explain.java
 
 clean:
 	rm -f *.class
